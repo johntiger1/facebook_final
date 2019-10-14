@@ -13,11 +13,9 @@
 var birthday_containers = document.getElementsByClassName("clearfix")
 for (var i = 0; i < birthday_containers.length; i++)
 {
-// 		console.log("ok this is running");
 		var x = birthday_containers[i].getElementsByTagName("a")[0];
 		if (x === undefined) continue;
 		var name  = x.innerHTML;
-		console.log(name);
 		var first_letter = name.charAt(0);
 
 
@@ -28,13 +26,6 @@ for (var i = 0; i < birthday_containers.length; i++)
 			y[j].value = "hbd" + first_letter.toLocaleLowerCase() + "!";
 
         }
-
-
-
-
-		console.log("this is the " + i );
-		console.log(y);
 }
-    // Your code here...
 })();
 
